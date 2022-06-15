@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--LinearLayout adalah kelompok tampilan yang menyejajarkan semua turunan dalam satu arah, baik vertikal maupun horizontal,
+ android layout width match_parent digunakan agar lebar dapat mengikuti layar atau screen pada perangkat Android,
+ android layout height wrap_content digunakan agar tinggi dapat mengikuti isi konten,
+ android orientation horizontal,
+ android padding/jarak elemen ukuran 16dp-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <!--android layout width berfungsi untuk menentukan ukuran lebar dari gambar yaitu 55dp,
+     android layout height berfungsi untuk menentukan ukuran tinggi dari gambar yaitu 55dp,
+      android layout marginEnd
+      Layout Margin digunakan untuk mengatur jarak antar View ukuran 16dp-->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_item_photo"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="16dp"
+        tools:src="@tools:sample/avatars" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--TextView adalah subkelas dari kelas View yang menampilkan teks di layar.
+         android layout width/lebar teks match parent mengikuti layar atau screen pd perangkat android
+         android layout height/tinggi teks wrap content mengikuti objek dalam komponen,
+         android margin/jarak bawah antar view berukuran 8dp,
+         ukuran text size 16sp,
+         text style bold/tebal-->
+        <TextView
+            android:id="@+id/tv_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="@string/drakor_name" />
+        <!--TextView adalah subkelas dari kelas View yang menampilkan teks di layar.
+         android layout width/lebar teks match parent mengikuti layar atau screen pd perangkat android
+         android layout height/tinggi teks wrap content mengikuti objek dalam komponen
+         android ellipsize end, android maxline berukuran 2,-->
+        <TextView
+            android:id="@+id/tv_item_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            tools:text="@string/detail" />
+    </LinearLayout>
+</LinearLayout>

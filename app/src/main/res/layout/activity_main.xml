@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Relative Layout untuk memposisikan komponen mana saja yang kita inginkan, sehingga dianggap sebagai layout yang paling fleksibel.
+     match_parent digunakan agar lebar atau tinggi komponen, dapat mengikuti layar atau screen pada perangkat Android-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_drakor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_row_drakor" />
+</RelativeLayout>

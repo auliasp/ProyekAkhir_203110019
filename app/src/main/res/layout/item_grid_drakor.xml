@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--LinearLayout adalah kelompok tampilan yang menyejajarkan semua turunan dalam satu arah, baik vertikal maupun horizontal,
+ android layout width match_parent digunakan agar lebar dapat mengikuti layar atau screen pada perangkat Android,
+ android layout height wrap_content digunakan agar tinggi dapat mengikuti isi konten,
+ android layout orientation vertical-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    !--ImageView digunakan untuk menampilkan file gambar,
+    android layout width match parent agar lebar gambar mengikuti layar atau screen pd perangkat,
+    android layout height/tinggi image berukuran 250dp,
+    android layout margin/batas tepi berukuran 1dp,
+    android scale type centercrop-->
+    <ImageView
+        android:id="@+id/img_item_photo"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="1dp"
+        android:scaleType="centerCrop"
+        tools:src="@tools:sample/avatars" />
+</LinearLayout>

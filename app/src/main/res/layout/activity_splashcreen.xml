@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- ConstraintLayout memungkinkan Anda membuat tata letak yang kompleks dan besar dengan hierarki tampilan datar (tidak ada grup tampilan tersarang),
+      match_parent digunakan agar lebar atau tinggi komponen, dapat mengikuti layar atau screen pada perangkat Android,
+      tools context digunakan untuk menghubungkan nya ke SplashScreenActivity,
+      android background digunakan untuk mengganti warna background dari splashscreen-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashcreenActivity"
+    android:background="#EED99D">
+
+    <!--ImageView digunakan untuk menampilkan file gambar,
+     android layout width berfungsi untuk menentukan ukuran lebar dari gambar yaitu 350dp,
+     android layout height berfungsi untuk menentukan ukuran tinggi dari gambar yaitu 350dp,
+     app layout bottom mengatur ukuran bawah gambar yaitu parent
+     app layout top of mengatur ukuran atas gambar yaitu parent
+     app layout left right mengatur ukuran kanan dan kiri gambar yaitu parent-->
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/splash">
+
+    </ImageView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
